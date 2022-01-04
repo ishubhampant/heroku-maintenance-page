@@ -8,12 +8,63 @@
     <link rel="shortcut icon" href="alien.gif" type="image/gif">
 </head>
 <body>
-    <h1>Hello</h1>
+    <div class="container">
+        <h1>Under maintenance</h1><h1 style="color:greenyellow;">.</h1><h1 style="color:greenyellow;">.</h1>
+        <img src="sleeping.gif" alt="">
+    </div>
 </body>
 
 <style>
-    h1{
-        color:red;
-    }
+@media only screen and (min-width: 760px){
+  .container{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container h1{
+    display: inline;
+    font-size: 60px;
+    margin: 0;
+  }
+
+  .container img{
+    width: 70px;
+  }
+}
+
+@media only screen and (max-width: 760px){
+  .container{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container h1{
+    font-size: 8vw;
+    display: block;
+    margin: 0;
+  }
+
+  .container img{
+    width: 15vw;
+  }
+}
 </style>
 </html>
